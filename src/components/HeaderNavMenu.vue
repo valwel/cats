@@ -7,26 +7,25 @@
     <div class="nav__contacts">
       <a href="tel:+78003335599" class="nav__contacts-phone">8 (800) 333-55-99</a>
       <ul class="nav__contacts-links">
-        <li><img src="@/assets/img/fb.svg" alt=""></li>
-        <li><img src="@/assets/img/inst.svg" alt=""></li>
-        <li><img src="@/assets/img/vk.svg" alt=""></li>
+        <a href="#"><img src="@/assets/img/fb.svg" alt=""></a>
+        <a href="#"><img src="@/assets/img/inst.svg" alt=""></a>
+        <a href="#"><img src="@/assets/img/vk.svg" alt=""></a>
       </ul>
     </div>
   </nav>
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/main.scss';
 .nav {
   display: flex;
   gap: 20px;
   align-items: center;
 
-  @media (max-width: 768px) {
-    margin-top: 50px;
+  @media (max-width: 767px) {
     flex-direction: column;
     align-items: start;
     gap: 25px;
+    padding: 50px 15px;
   }
 
   &__contacts {

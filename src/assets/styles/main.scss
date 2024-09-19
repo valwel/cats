@@ -6,6 +6,7 @@ $yellow: #FAC663;
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 
   @media (max-width: 1440px) {
@@ -51,7 +52,7 @@ $yellow: #FAC663;
   font-size: 20px;
   font-weight: 500;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-weight: 600;
   }
 }
