@@ -6,10 +6,21 @@ $yellow: #FAC663;
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 
   @media (max-width: 1440px) {
     padding: 0 10px;
+  }
+
+  @media (max-width: 1280px) {
+    max-width: 1024px;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 768px;
+    padding: 0 20px;
   }
 }
 
@@ -19,6 +30,7 @@ $yellow: #FAC663;
 
 .h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik", sans-serif;
+  color: $text;
 }
 
 .h2 {
@@ -39,6 +51,14 @@ $yellow: #FAC663;
 .h5 {
   font-size: 20px;
   font-weight: 500;
+
+  @media (max-width: 767px) {
+    font-weight: 600;
+  }
+}
+
+.bg-yellow {
+  background-color: $yellow;
 }
 
 * {
@@ -64,6 +84,7 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
+  color: $text;
 }
 
 a:hover {
@@ -103,8 +124,8 @@ img {
 
 img,
 svg {
-  // max-width: 100%;
-  // height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
