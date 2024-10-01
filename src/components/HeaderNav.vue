@@ -25,6 +25,7 @@
       :class="{active: !isMenuOpened}"
     ></HeaderNavMenu>
   </header>
+  <router-view/>
 </template>
 
 <script setup lang="ts">
