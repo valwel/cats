@@ -73,6 +73,7 @@ const props = defineProps({
 
   &--orange-outline {
     outline: solid 1px $orange;
+    background-color: $white;
     display: flex;
     align-items: center;
     padding: 6px;
