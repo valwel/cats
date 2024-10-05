@@ -1,14 +1,18 @@
 <template>
   <div class="home">
-    <CustomButton title="Применить" type="yellow-outline"></CustomButton>
-    <CustomButton title="Сбросить фильтр" type="yellow"></CustomButton>
-    <CustomButton title="Забронировать" type="orange" icon="white-icon"></CustomButton>
-    <CustomButton title="Забронировать" type="orange-outline" icon="orange-icon"></CustomButton>
+    <HomeBunner />
+    <HomeAdvantages />
+    <HomeRooms />
+    <HomeFeedback />
   </div>
 </template>
 
 <script setup lang="ts">
-import CustomButton from '@/components/ui/CustomButton.vue';
+// import CustomButton from '@/components/ui/CustomButton.vue';
+import HomeBunner from '@/components/HomeBunner.vue';
+import HomeAdvantages from '@/components/HomeAdvantages.vue';
+import HomeRooms from '@/components/HomeRooms.vue';
+import HomeFeedback from '@/components/HomeFeedback.vue';
 </script>
 
 
